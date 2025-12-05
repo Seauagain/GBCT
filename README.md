@@ -31,7 +31,7 @@ We have open-sourced the full Datasets, Pre-trained Weights (Checkpoints), and T
 | :--- | :--- | :--- |
 | **Chemical Reaction** | [Training Set](#) \| [Test Set](#) | [Download](#) |
 | **Nuclear Reaction** | [Dataset](#) | [Download](#) |
-| **Robertson** | [Dataset](#) | [Download](#) |
+| **Robertson Problem** | [Dataset](#) | [Download](#) |
 
 
 ## Introduction
