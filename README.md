@@ -85,3 +85,20 @@ GBCTNet converges significantly faster. It achieves low generalization error (RM
   <img src="assets/img/Fig_analysis_train.png" alt="training_efficiency" width="700">
 </p>
 <p align="center"><em>Figure: Training efficiency.</em></p>
+
+
+<a name="quick-start"></a>
+## Quick Start
+
+### (option 1) Install via conda
+```bash
+conda install pytorch
+conda install --channel cantera cantera==2.6.0 -y
+conda install numpy matplotlib seaborn scikit-learn pandas -y
+pip install easydict scienceplots meshio -i https://pypi.tuna.tsinghua.edu.cn/simple
+conda install -c conda-forge mpi4py openmpi
+```
+### (option 2) Install via docker
+```bash 
+docker pull ckode/deepck:1.0.0_pytorch1.12_cuda11.3
+```
