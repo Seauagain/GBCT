@@ -25,7 +25,7 @@ GBCT: An Output Scaling Layer Boosts Deep Neural Networks for Multiscale ODE Sys
 - **[2025.12.01]** **GBCT** code is now open-source!
 
 ## Resources
-We have open-sourced the full Datasets, Pre-trained Weights (Checkpoints), and Training/Inference scripts used in the paper.
+We have open-sourced the full datasets, pre-trained weights (checkpoints), and training/inference scripts used in the paper. (coming soon)
 
 | Case | Dataset | Checkpoint |
 | :--- | :--- | :--- |
@@ -79,9 +79,26 @@ In simulating a white dwarf's internal deflagration (nuclear flame):
 
 
 ## Training Efficiency
-GBCTNet converges significantly faster. It achieves low generalization error (RMSE) in the early training stages, requiring only **1/6th** of the epochs needed by the baseline to reach comparable accuracy.
+GBCTNet converges significantly faster. It achieves low generalization error (RMSE) in the early training stages, requiring only **1/6** of the epochs needed by the baseline to reach comparable accuracy.
 
 <p align="center">
   <img src="assets/img/Fig_analysis_train.png" alt="training_efficiency" width="700">
 </p>
 <p align="center"><em>Figure: Training efficiency.</em></p>
+
+
+<a name="quick-start"></a>
+## Quick Start
+
+### (option 1) Install via conda
+```bash
+conda install pytorch
+conda install --channel cantera cantera==2.6.0 -y
+conda install numpy matplotlib seaborn scikit-learn pandas -y
+pip install easydict scienceplots meshio -i https://pypi.tuna.tsinghua.edu.cn/simple
+conda install -c conda-forge mpi4py openmpi
+```
+### (option 2) Install via docker
+```bash 
+docker pull ckode/deepck:1.0.0_pytorch1.12_cuda11.3
+```
