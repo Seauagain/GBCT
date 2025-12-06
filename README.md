@@ -25,7 +25,7 @@ GBCT: An Output Scaling Layer Boosts Deep Neural Networks for Multiscale ODE Sys
 - **[2025.12.01]** **GBCT** code is now open-source!
 
 ## Resources
-We have open-sourced the full Datasets, Pre-trained Weights (Checkpoints), and Training/Inference scripts used in the paper.
+We have open-sourced the full datasets, pre-trained weights (checkpoints), and training/inference scripts used in the paper. (coming soon)
 
 | Case | Dataset | Checkpoint |
 | :--- | :--- | :--- |
@@ -79,7 +79,7 @@ In simulating a white dwarf's internal deflagration (nuclear flame):
 
 
 ## Training Efficiency
-GBCTNet converges significantly faster. It achieves low generalization error (RMSE) in the early training stages, requiring only **1/6th** of the epochs needed by the baseline to reach comparable accuracy.
+GBCTNet converges significantly faster. It achieves low generalization error (RMSE) in the early training stages, requiring only **1/6** of the epochs needed by the baseline to reach comparable accuracy.
 
 <p align="center">
   <img src="assets/img/Fig_analysis_train.png" alt="training_efficiency" width="700">
